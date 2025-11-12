@@ -1,4 +1,4 @@
-# EX-NO14-HASH-ALGORITHM
+<img width="475" height="146" alt="image" src="https://github.com/user-attachments/assets/1362de08-4b0f-4d99-9aff-569623b89ac1" /># EX-NO14-HASH-ALGORITHM
 
 ## AIM:
 To implement HASH ALGORITHM
@@ -28,8 +28,36 @@ To implement HASH ALGORITHM
 
 ## Program:
 
+```
+#include <stdio.h>
+#include <string.h>
+
+unsigned int simple_hash(const char *message) {
+unsigned int hash = 0;
+int i;
+for (i = 0; i < strlen(message); i++) {
+hash = (hash * 31) + message[i];
+}
+return hash;
+}
+int main() {
+char message[256];
+unsigned int hash_value;
+
+printf("Enter the message to hash: ");
+fgets(message, sizeof(message), stdin);
+message[strcspn(message, "\n")] = '\0'; 
+hash_value = simple_hash(message);
+printf("Generated hash value: %u\n", hash_value);
+return 0;
+}
+```
+
 
 ## Output:
+
+<img width="475" height="146" alt="image" src="https://github.com/user-attachments/assets/8dd5c453-b751-4e50-a6d7-d844abd0c736" />
+
 
 ## Result:
 The program is executed successfully.
