@@ -1,5 +1,3 @@
-<img width="475" height="146" alt="image" src="https://github.com/user-attachments/assets/1362de08-4b0f-4d99-9aff-569623b89ac1" /># EX-NO14-HASH-ALGORITHM
-
 ## AIM:
 To implement HASH ALGORITHM
 
@@ -52,7 +50,6 @@ printf("Generated hash value: %u\n", hash_value);
 return 0;
 }
 ```
-
 
 ## Output:
 
